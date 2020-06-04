@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Pendulum</title>
+	<script src="pendulum.js"></script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+<body>
+  <h2>Pendulum Simulation</h2>
+	<canvas id="board" width="400" height="400"></canvas>
+  <canvas id="graph" width="400" height="400"></canvas>
+
+  <div>
+    <input type="range" min="1" max="60" step="1" id="angle_slider">
+    Release angle: <span id="angle_text"></span> degrees
+  </div>
+
+  <div>
+    The diagram on the right is the plot of angular acceleration (y) versus
+    angular displacement (x). Note that it's nearly a straight line when the release angle is small.
+  </div>
+
+</body>
+</html>

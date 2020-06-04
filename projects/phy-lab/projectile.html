@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Projectile Motion</title>
+	  <script src="projectile.js"></script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+<body>
+  <h2>Projectile Motion</h2>
+	<canvas id="board" width="400" height="400"></canvas>
+	<div id="logger"></div>
+  <div>
+    Initial height
+    <input type="range" min="50" max="350" id="height_slider">
+    <span id="height_text"></span>
+  </div>
+  <div>
+    Initial velocity
+    <input type="range" min="60" max="150" id="velocity_slider">
+    <span id="velocity_text"></span>
+  </div>
+  <div>
+    Note that no matter what initial height and velocity are, the ball will always hit the target.
+  </div>
+</body>
+</html>

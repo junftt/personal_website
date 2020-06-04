@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Sound Beat</title>
+	<script src="beat.js"></script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+<body>
+  <h2>Superposition of sound waves</h2>
+	<canvas id="board" width="400" height="400"></canvas>
+  
+  <div>
+    <input type="checkbox" id="f1_audio"> audio
+    <input type="range" min="100" max="1000" id="f1_slider">
+    f1:<span id="f1_text"></span>
+  </div>
+  <div>
+    <input type="checkbox" id="f2_audio"> audio
+    <input type="range" min="100" max="1000" id="f2_slider">
+    f2:<span id="f2_text"></span>
+  </div>
+  <div>
+    <input type="range" min="0" max="1" step="0.01" id="offset_slider">
+    offset
+  </div>
+  <div>
+    <input type="range" min="1" max="20" step="0.1"  id="scale_slider">
+    scale
+  </div>
+	<div>frequency of beat = <span id="f_beat"></span></div>
+</body>
+</html>

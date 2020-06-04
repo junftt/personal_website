@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Electric Field</title>
+	  <script src="charges.js"></script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+<body>
+  <h2>Electric Field Visualization</h2>
+	<canvas id="board" width="400" height="400"></canvas>
+  <div>
+    (Click and drag to change the position of point charge.)
+  </div>
+  <br>
+
+  <div>
+    Magnitude of the spherical conductor
+    <input type="range" min="-5" max="5" step="0.1" id="qsphere_slider">
+    <span id="qsphere_text"></span>C
+  </div>
+  <div>
+    Magnitude of the point charge
+    <input type="range" min="-5" max="5" step="0.1" id="qpoint_slider">
+    <span id="qpoint_text"></span>C
+  </div>
+  <div>
+    <input type="checkbox" id="show_image_charges">
+    Show image charge(s)
+  </div>
+  <div id="image_charges">
+  </div>
+  <div>
+    <input type="checkbox" id="more_lines">
+    More electric field lines
+  </div>
+  <div id="message" style="color:red">
+  </div>
+  <br>
+  <div>
+    The electric field is computed by replacing the spherial conductor with <a target="_blank" href="https://en.wikipedia.org/wiki/Method_of_image_charges">image charge(s)</a>.
+  </div>
+</body>
+</html>
