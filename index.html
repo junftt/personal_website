@@ -3,7 +3,7 @@
 <head>
     <title>Jun Yan's personal website</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script>
 </head>
 
 <body style="max-width: 800px;margin: 20px auto;">
@@ -152,17 +152,14 @@
         </a>
     </div>
     <script>
-        VANTA.CLOUDS2({
+        VANTA.WAVES({
             el: "body",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            skyColor: 0x87ceeb,
-            cloudColor: 0xffffff,
-            sunColor: 0xffde00
-        })
+            color: 0x123456,
+            shininess: 20,
+            waveHeight: 10,
+            waveSpeed: 0.4,
+            zoom: 0.85
+        });
     </script>
 </body>
 
