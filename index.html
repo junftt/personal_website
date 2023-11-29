@@ -2,6 +2,8 @@
 
 <head>
     <title>Jun Yan's personal website</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds2.min.js"></script>
 </head>
 
 <body style="max-width: 800px;margin: 20px auto;">
@@ -149,6 +151,19 @@
             <img src="drawings/6-thumbnail.jpg" width=150 />
         </a>
     </div>
+    <script>
+        VANTA.CLOUDS2({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            skyColor: 0x87ceeb,
+            cloudColor: 0xffffff,
+            sunColor: 0xffde00
+        })
+    </script>
 </body>
 
 </html>
