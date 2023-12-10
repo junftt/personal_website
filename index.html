@@ -6,10 +6,18 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <style>
+            ul.white-bullets li::marker {
+                color: white;
+            }
+        </style>
     </head>
 
     <body
-        style="max-width: 800px;padding: 50px;margin: 20px auto; background-color: #141414;">
+        style="font-family: 'Roboto', sans-serif; max-width: 800px;padding: 50px;margin: 20px auto; background-color: #141414;">
         <div style="display: flex; flex-direction: column; align-items: center;">
             <img src="profile.jpg" alt="Jun Yan"
                 style="border-radius: 50%; width: 100px;">
@@ -22,66 +30,39 @@
             </h3>
             <div style="margin-bottom: 20px; color: white;">
                 +1 631-615-9549 <br>
-                <a href="mailto:juneyeat@gmail.com">juneyeat@gmail.com</a>
+                <a href="mailto:juneyeat@gmail.com" style="color: #1a73e8;">juneyeat@gmail.com</a>
             </div>
             <div>
                 <a href="https://www.linkedin.com/in/jun-yan-832968267/"
-                    target="_blank">my linkedin</a>
+                    target="_blank" style="color: #1a73e8;">my linkedin</a>
                 <span style="margin-left: 10px;"></span>
-                <a href="https://github.com/junftt" target="_blank">my github</a>
+                <a href="https://github.com/junftt" target="_blank"
+                    style="color: #1a73e8;">my github</a>
                 <span style="margin-left: 10px;"></span>
-                <a href="Jun Yan's Resume.pdf" target="_blank">my resume</a>
+                <a href="Jun Yan's Resume.pdf" target="_blank"
+                    style="color: #1a73e8;">my resume</a>
             </div>
         </div>
         <hr>
-        <h2 style="color: white;">CSE 300: Technical Communications</h2>
-        <ul>
-            <li>
-                <h3><a href="User Instructions.pdf" target="_blank">User
-                        Instructions</a> </h3>
-                <div style="color: white;">
-                    This document is a concise guide for beginners to use the
-                    GNU Debugger (GDB) for
-                    C programming. It covers GDB installation, essential
-                    commands, and a simple debugging example, making it
-                    an ideal starting point for new programmers.
-                </div>
-            </li>
-            <li>
-                <h3><a href="Professional Emails.pdf" target="_blank">In-class
-                        assignment: Professional Emails</a> </h3>
-                <div style="color: white;">
-                    I wrote a thank-you email to a recruiter I met, connecting
-                    my skills to their field, attached my resume,
-                    and submitted the email for review.
-                </div>
-            </li>
-            <li>
-                <h3><a
-                        href="https://docs.google.com/presentation/d/13oGQeDXnKnkhMFD2RzcjQ2J1PYoaiwINVsNHX5QsSvo/edit#slide=id.p"
-                        target="_blank">Collaborative Problem-solving Project
-                    </a> </h3>
-                <div style="color: white;">
-                    Me and my teammates addressed commuter sleep deprivation on
-                    campus by proposing nap pods and commuter
-                    dorms in a
-                    concise slideshow presentation.
-                </div>
-            </li>
-        </ul>
-        <hr>
         <h2 style="color: white;">Projects</h2>
-        <ul>
+        <ul class="white-bullets">
             <li>
-                <h3
-                    style="display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="display: flex; align-items: center;">
+                    <img src="chrome_web_store_icon.png" alt="Icon"
+                        style="width: 16px; height: 16px; margin-right: 5px;">
                     <a
                         href="https://chrome.google.com/webstore/detail/chrono-power-action/mpndfekdcijnjgfcoghjkhnjmdajhmnf"
-                        target="_blank">Chrono Power Action</a>
+                        target="_blank"
+                        style="color: #1a73e8;">Chrono
+                        Power Action</a>
                     <span
-                        style="font-size: smaller; font-weight: normal; color: #920707;">20,000+
-                        Users</span>
+                        style="font-size: smaller; font-weight: normal; color: #aa0b0b; display: flex; align-items: center; margin-left: 10px;">
+                        <img src="cpa_users.png"
+                            alt="Chrono Power Action User Count"
+                            style="height: 16px; width: auto; border-radius: 5px;">
+                    </span>
                 </h3>
+
                 <div style="color: white; padding-bottom: 5px;">A Chrome/Edge
                     extension for easy
                     search and navigation; includes bookmarks, history, and
@@ -97,15 +78,21 @@
             </li>
 
             <li>
-                <h3
-                    style="display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="display: flex; align-items: center;">
+                    <img src="chrome_web_store_icon.png" alt="Icon"
+                        style="width: 16px; height: 16px; margin-right: 5px;">
                     <a
                         href="https://chromewebstore.google.com/detail/chrono-download-manager/mciiogijehkdemklbdcbfkefimifhecn"
-                        target="_blank">Chrono Download Manager</a>
+                        target="_blank"
+                        style="color: #1a73e8;">Chrono Download Manager</a>
                     <span
-                        style="font-size: smaller; font-weight: normal; color: #920707;">800,000+
-                        Users</span>
+                        style="font-size: smaller; font-weight: normal; color: #aa0b0b; display: flex; align-items: center; margin-left: 10px;">
+                        <img src="cdmg_users.png"
+                            alt="Chrono Power Action User Count"
+                            style="height: 16px; width: auto; border-radius: 5px;">
+                    </span>
                 </h3>
+
                 <div style="color: white; padding-bottom: 5px;">A Chrome/Edge
                     extension for managing
                     your downloads.
@@ -121,7 +108,8 @@
             </li>
             <li>
                 <h3><a href="https://junftt.github.io/mips_demo/index.html"
-                        target="_blank">MIPS Simulator</a> </h3>
+                        target="_blank" style="color: #1a73e8;">MIPS Simulator</a>
+                </h3>
                 <div style="color: white; padding-bottom: 5px;">Run MIPS
                     program in browser</div>
                 <a href="https://junftt.github.io/mips_demo/index.html"
@@ -131,56 +119,47 @@
                         style="width: 100%; height: auto; border-radius: 5px;">
                 </a>
             </li>
+        </ul>
+        <hr>
+        <h2 style="color: white;">Highschool Creations</h2>
+        <ul class="white-bullets">
             <li>
-                <h3><a
-                        href="https://chrome.google.com/webstore/detail/thexnin-media-controller/nnkpghdbafelcpgcioacemmplkioloab"
-                        target="_blank">Thexnin
-                        Meida Controller</a> </h3>
-                <div style="color: white;">A chrome extension that can easily
-                    control media across websites</div>
-            </li>
-            <li>
-                <h3><a href="projects/phy-lab/phy-lab-web.html" target="_blank">Virtual
+                <h3><a href="projects/phy-lab/phy-lab-web.html" target="_blank"
+                        style="color: #1a73e8;">Virtual
                         Physics Lab</a> </h3>
                 <div style="color: white;">A virtual physics lab built with
                     javascript</div>
             </li>
             <li>
                 <h3><a href="https://junftt.github.io/algovis/index.html"
-                        target="_blank">Algovis</a> </h3>
+                        target="_blank" style="color: #1a73e8;">Algovis</a>
+                </h3>
                 <div style="color: white;">Algorithm visualization using
                     javascript generator</div>
             </li>
             <li>
                 <h3><a href="https://junftt.github.io/gomoku/game.html"
-                        target="_blank">Gomoku</a> </h3>
+                        target="_blank" style="color: #1a73e8;">Gomoku</a> </h3>
                 <div style="color: white;">Gomoku game in javascript</div>
             </li>
             <li>
                 <h3><a href="projects/minesweeper/readme_of_minesweeper.html"
-                        target="_blank">Minesweeper</a> </h3>
+                        target="_blank" style="color: #1a73e8;">Minesweeper</a>
+                </h3>
                 <div style="color: white;">Minesweeper game in java</div>
             </li>
             <li>
                 <h3><a href="projects/calendar/readme_of_calendar.html"
-                        target="_blank">Calendar</a> </h3>
+                        target="_blank" style="color: #1a73e8;">Calendar</a>
+                </h3>
                 <div style="color: white;">A c program for displaying calendar
                     of years</div>
             </li>
             <li>
-                <h3><a href="projects/tetris/tetris_web.html" target="_blank">Tetris</a>
+                <h3><a href="projects/tetris/tetris_web.html" target="_blank"
+                        style="color: #1a73e8;">Tetris</a>
                 </h3>
                 <div style="color: white;">Tetris game in javascript</div>
-            </li>
-            <li>
-                <h3><a href="projects/snake/snake_web.html" target="_blank">Snake</a>
-                </h3>
-                <div style="color: white;">Snake game in javascript</div>
-            </li>
-            <li>
-                <h3><a href="projects/calculator/calculator_web.html"
-                        target="_blank">Calculator</a> </h3>
-                <div style="color: white;">A calculator in javascript</div>
             </li>
         </ul>
         <hr>
@@ -218,7 +197,7 @@
             color: 0x020202,
             shininess: 20,
             waveHeight: 10,
-            waveSpeed: 0.4,
+            waveSpeed: 0.2,
             zoom: 0.85
         });
     </script>
