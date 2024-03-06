@@ -32,6 +32,25 @@
                 background-size: 100% 2px;
                 background-position-y: 80%;
             }
+            .typewriter {
+                color:#0000;
+                background:
+                  linear-gradient(-90deg,white 5px,#0000 0) 10px 0,
+                  linear-gradient(white 0 0) 0 0;
+                background-size:calc(var(--n)*1ch) 200%;
+                -webkit-background-clip:padding-box,text;
+                background-clip:padding-box,text;
+                background-repeat:no-repeat;
+                animation: 
+                 b .7s infinite steps(1),   
+                 t calc(var(--n)*.04s) steps(var(--n)) forwards;
+              }
+              @keyframes t{
+                from {background-size:0 200%}
+              }
+              @keyframes b{
+                50% {background-position:0 -100%,0 0}
+              }
         </style>
     </head>
 
@@ -43,11 +62,16 @@
                 style="border-radius: 50%; width: 100px;">
             <h3
                 style="color: white; font-family: 'Libre Baskerville', serif; font-style: italic; font-weight: 400; font-size: 1em; text-align: center; margin: 20px">
-                <div>Hello, my name is Jun Yan.</div>
-                <div>I graduated from Stony Brook University with a degree in
-                    Computer Science.</div>
-                <div>Below are some of my programming projects and some drawings
-                    for fun.</div>
+                <span class="typewriter" style="--n:165">
+                    Hello, my name is Jun Yan.
+                    <br>
+                    I graduated from Stony Brook University with a degree in
+                    Computer Science.
+                    <br>
+                    Below are some of my programming projects and some
+                    drawings
+                    for fun.
+                </span>
             </h3>
             <div style="margin-bottom: 20px; color: white;">
                 +1 631-615-9549 <br>
