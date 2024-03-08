@@ -51,6 +51,17 @@
               @keyframes b{
                 50% {background-position:0 -100%,0 0}
               }
+              hr {
+                border: 0;
+                height: 2px;
+                border-top: 3px double #333;
+                background-image: linear-gradient(to right, #35302d 0%, #b8a597 50%, #35302d 100%); /* 添加渐变效果，模仿老式的质感 */
+                margin: 20px 0;
+                box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+              }
         </style>
     </head>
 
@@ -88,7 +99,8 @@
             </div>
         </div>
         <hr>
-        <h2 style="color: white;">Projects</h2>
+        <h2
+            style="color: white; font-family: 'Libre Baskerville', serif; font-style: italic; font-weight: 400; font-size: 1.5em;">Projects</h2>
         <ul class="white-bullets">
             <li style="padding-bottom: 25px;">
                 <h3
@@ -113,10 +125,10 @@
                 <a
                     href="https://chrome.google.com/webstore/detail/chrono-power-action/mpndfekdcijnjgfcoghjkhnjmdajhmnf"
                     target="_blank"
-                    style="display: inline-block; width: 50%; text-align: left;">
+                    style="display: inline-block; width: 250px; height: auto; text-align: left;">
                     <img src="cpa.png"
                         alt="Chrono Power Action Image"
-                        style="width: 100%; height: auto; border-radius: 5px;">
+                        style="width: 250px; height: auto; border-radius: 5px;">
                 </a>
             </li>
             <li style="padding-bottom: 25px;">
@@ -141,10 +153,10 @@
                 <a
                     href="https://chromewebstore.google.com/detail/chrono-download-manager/mciiogijehkdemklbdcbfkefimifhecn"
                     target="_blank"
-                    style="display: inline-block; width: 50%; text-align: left;">
+                    style="display: inline-block; width: 250px; height: auto; text-align: left;">
                     <img src="cdmg.png"
                         alt="Chrono Download Manager Image"
-                        style="width: 100%; height: auto; border-radius: 5px;">
+                        style="width: 250px; height: auto; border-radius: 5px;">
                 </a>
             </li>
             <li style="padding-bottom: 25px;">
@@ -161,9 +173,9 @@
                     browser</div>
                 <a href="https://junftt.github.io/mips_demo/index.html"
                     target="_blank"
-                    style="display: inline-block; width: 50%; text-align: left;">
+                    style="display: inline-block; width: 250px; height: auto; text-align: left;">
                     <img src="donut.gif" alt="Donut Gif"
-                        style="width: 100%; height: auto; border-radius: 5px;">
+                        style="width: 250px; height: auto; border-radius: 5px;">
                 </a>
             </li>
             <li style="padding-bottom: 25px;">
@@ -178,44 +190,54 @@
                     account management, map editing, and community
                     interaction.</div>
                 <div style="display: flex; flex-wrap: wrap;">
-                    <div
-                        style="width: 50%; box-sizing: border-box; text-align: left; padding: 5px; padding-left: 0px;">
-                        <a href="mapper_homepage.png" target="_blank"
-                            style="display: block; width: 100%; border-radius: 5px;">
-                            <img src="mapper_homepage.png" alt="mapper_homepage"
-                                style="width: 100%; height: auto; border-radius: 5px;">
-                        </a>
+                    <div>
+                        <div
+                            style="width: 250px; height: auto; box-sizing: border-box; text-align: left; margin: 5px; margin-left: 0px; margin-bottom: 10px">
+                            <a href="mapper_homepage.png" target="_blank"
+                                style="display: block; width: 250px; height: auto; border-radius: 5px;">
+                                <img src="mapper_homepage.png"
+                                    alt="mapper_homepage"
+                                    style="width: 250px; height: auto; border-radius: 5px;">
+                            </a>
+                        </div>
+                        <div
+                            style="width: 250px; height: auto; box-sizing: border-box; text-align: left; margin: 5px; margin-left: 0px;">
+                            <a href="mapper_worldmap.png" target="_blank"
+                                style="display: block; width: 250px; height: auto; border-radius: 5px;">
+                                <img src="mapper_worldmap.png"
+                                    alt="mapper_worldmap"
+                                    style="width: 250px; height: auto; border-radius: 5px;">
+                            </a>
+                        </div>
                     </div>
-                    <div
-                        style="width: 50%; box-sizing: border-box; text-align: left; padding: 5px;">
-                        <a href="mapper_worldmap.png" target="_blank"
-                            style="display: block; width: 100%; border-radius: 5px;">
-                            <img src="mapper_worldmap.png" alt="mapper_worldmap"
-                                style="width: 100%; height: auto; border-radius: 5px;">
-                        </a>
-                    </div>
-                    <div
-                        style="width: 50%; box-sizing: border-box; text-align: left; padding: 5px; padding-left: 0px;">
-                        <a href="mapper_heatmap.png" target="_blank"
-                            style="display: block; width: 100%; border-radius: 5px;">
-                            <img src="mapper_heatmap.png" alt="mapper_heatmap"
-                                style="width: 100%; height: auto; border-radius: 5px;">
-                        </a>
-                    </div>
-                    <div
-                        style="width: 50%; box-sizing: border-box; text-align: left; padding: 5px;">
-                        <a href="mapper_spikemap.png" target="_blank"
-                            style="display: block; width: 100%; border-radius: 5px;">
-                            <img src="mapper_spikemap.png" alt="mapper_spikemap"
-                                style="width: 100%; height: auto; border-radius: 5px;">
-                        </a>
+                    <div>
+                        <div
+                            style="width: 250px; height: auto; box-sizing: border-box; text-align: left; margin: 5px; margin-bottom: 10px;">
+                            <a href="mapper_heatmap.png" target="_blank"
+                                style="display: block; width: 250px; height: auto; border-radius: 5px;">
+                                <img src="mapper_heatmap.png"
+                                    alt="mapper_heatmap"
+                                    style="width: 250px; height: auto; border-radius: 5px;">
+                            </a>
+                        </div>
+                        <div
+                            style="width: 250px; height: auto; box-sizing: border-box; text-align: left; margin: 5px;">
+                            <a href="mapper_spikemap.png" target="_blank"
+                                style="display: block; width: 250px; height: auto; border-radius: 5px;">
+                                <img src="mapper_spikemap.png"
+                                    alt="mapper_spikemap"
+                                    style="width: 250px; height: auto; border-radius: 5px;">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
             </li>
         </ul>
         <hr>
-        <h2 style="color: white;">Projects before college</h2>
+        <h2
+            style="color: white; font-family: 'Libre Baskerville', serif; font-style: italic; font-weight: 400; font-size: 1.5em;">Projects
+            before college</h2>
         <ul class="white-bullets">
             <li>
                 <h3 style="margin-bottom: 0px;"><a class="project_title"
@@ -268,7 +290,8 @@
             </li>
         </ul>
         <hr>
-        <h2 style="color: white;">Drawings</h2>
+        <h2
+            style="color: white; font-family: 'Libre Baskerville', serif; font-style: italic; font-weight: 400; font-size: 1.5em;">Drawings</h2>
         <div>
             <a href="drawings/1.jpg" target="_blank">
                 <img src="drawings/1-thumbnail.jpg" width=150 />
